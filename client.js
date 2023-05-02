@@ -47,11 +47,58 @@ console.log('array of employee data: ',  employees );
 
 
 // This function will calculate 1 employee's bonus!
-//
 function calculateIndividualEmployeeBonus( employee ) {  
-  // your logic here
   
-  
-  // return new object with bonus results
+ 
+    let bonusPercentage = 0;
+     if (employee.reviewRating === 5 ) {
+        return 0.1;
+      } else if (employee.reviewRating === 4 ) {
+        return 0.06;
+      } else if (employee.reviewRating === 3){
+        return 0.04;
+      } else if (employee.reviewRating <= 2){
+        return 0.0;
+      } 
+      return bonusPercentage
+    }
+      function adjustedBonusPercentage(){
+       let finalPercent = 0;
+       if (employee.employeeNumber<=9999){
+        bonusPercentage + 0.05
+      return finalPercent
+     }
 
+
+  // bonusPercentage * employee.annualSalary
+  
+
+    
+
+  //     bonusPercentage * employee.annualSalary
+
+
+  //     13>bonusPercentage>0
+
+   
 }
+  
+
+
+
+// let bonusPackage = {
+//   name: ,
+//   bonusPercentage: bonusPercentage,
+//   totalCompensation: function totalCompensation,
+//   totalBonus: employee.annualSalary * bonusPercentage
+// }
+
+
+
+for (let employee of employees){
+  calculateIndividualEmployeeBonus(employee);
+}
+
+
+
+console.log(calculateIndividualEmployeeBonus(employees[0]));
